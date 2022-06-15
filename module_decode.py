@@ -86,6 +86,14 @@ class Decoder:
             else:
                 self.valid_flag = False
 
+        elif self.array[0] == "test" and self.arrary_len == 4:
+            self.cmd_1 = "test"
+            if self.array[1] == "led":
+                self.cmd_2 = "led"
+                self.value_1 = int(self.array[2])   # Stripe (1-8)
+                self.value_2 = int(self.array[3])   # LED-Position (0-1024)
+                self.valid_flag = True
+
         else:
             self.valid_flag = False
 
@@ -148,8 +156,9 @@ def main():
     decode_printout()
     print(get_cmd_1())
     print("-----------------------------------")
-    #decode_test("do,all,on")
-    #print("-----------------------------------")
+    decode_input("test,led,1,0")
+    decode_printout()
+    print("-----------------------------------")
 
 
 
