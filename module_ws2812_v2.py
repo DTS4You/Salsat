@@ -162,7 +162,7 @@ def setup_ws2812():
 
 def test_led(stripe, pos):
     do_all_off()
-    strip_obj[stripe].set_pixel(0, (70,70,70))
+    strip_obj[stripe].set_pixel(pos, (70,70,70))
     ledstate.refresh()
 
 def do_all_on():
