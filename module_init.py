@@ -23,6 +23,7 @@ class Global_WS2812:
     seg_01_strip        = 0             #  1. Ledsegment -> Stripe
     seg_01_start        = 0             #  1. Ledsegment -> Start
     seg_01_count        = seg_len       #  1. Ledsegment -> Anzahl
+
     seg_02_strip        = 0             #  2. Ledsegment -> Stripe
     seg_02_start        = seg_len       #  2. Ledsegment -> Start
     seg_02_count        = seg_len       #  2. Ledsegment -> Anzahl
@@ -30,6 +31,7 @@ class Global_WS2812:
     seg_03_strip        = 1             #  3. Ledsegment -> Stripe
     seg_03_start        = 0             #  3. Ledsegment -> Start
     seg_03_count        = seg_len       #  3. Ledsegment -> Anzahl
+    
     seg_04_strip        = 1             #  4. Ledsegment -> Stripe
     seg_04_start        = seg_len       #  4. Ledsegment -> Start
     seg_04_count        = seg_len       #  4. Ledsegment -> Anzahl
@@ -37,9 +39,11 @@ class Global_WS2812:
     seg_05_strip        = 2             #  5. Ledsegment -> Stripe
     seg_05_start        = 0             #  5. Ledsegment -> Start
     seg_05_count        = seg_len       #  5. Ledsegment -> Anzahl
+    
     seg_06_strip        = 2             #  6. Ledsegment -> Stripe
     seg_06_start        = seg_len       #  6. Ledsegment -> Start
     seg_06_count        = seg_len       #  6. Ledsegment -> Anzahl
+    
     seg_07_strip        = 2             #  7. Ledsegment -> Stripe
     seg_07_start        = seg_len * 2   #  7. Ledsegment -> Start
     seg_07_count        = seg_len       #  7. Ledsegment -> Anzahl
@@ -47,12 +51,16 @@ class Global_WS2812:
     seg_08_strip        = 3             #  8. Ledsegment -> Stripe
     seg_08_start        = 0             #  8. Ledsegment -> Start
     seg_08_count        = seg_len       #  8. Ledsegment -> Anzahl
+    
     seg_09_strip        = 3             #  9. Ledsegment -> Stripe
     seg_09_start        = seg_len       #  9. Ledsegment -> Start
     seg_09_count        = seg_len       #  9. Ledsegment -> Anzahl
+    
     seg_10_strip        = 3             # 10. Ledsegment -> Stripe
     seg_10_start        = seg_len * 2   # 10. Ledsegment -> Start
     seg_10_count        = seg_len       # 10. Ledsegment -> Anzahl
+
+# -----------------------------------------------------------------------------
 
     color_def           = (  0,  0,  5)
     color_off           = (  0,  0,  0)
