@@ -55,6 +55,12 @@ def main():
                         #print(segment_map[MyDecode.get_value_1()])
                         MyWS2812.set_led_obj(segment_map[MyDecode.get_value_1()], MyDecode.get_value_2())
 
+                if MyDecode.get_cmd_1() == "test":
+                    print("Test")
+                    if MyDecode.get_cmd_2() == "led":
+                        print("LED")
+                
+
         blink_couter = blink_couter + 1
         # Loop-Delay !!!
         time.sleep(0.01)        # 10ms

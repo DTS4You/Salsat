@@ -90,7 +90,7 @@ class Decoder:
             self.cmd_1 = "test"
             if self.array[1] == "led":
                 self.cmd_2 = "led"
-                self.value_1 = int(self.array[2])   # Stripe (1-8)
+                self.value_1 = int(self.array[2])   # Stripe (0-7)
                 self.value_2 = int(self.array[3])   # LED-Position (0-1024)
                 self.valid_flag = True
 

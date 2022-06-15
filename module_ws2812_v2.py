@@ -160,6 +160,10 @@ def setup_ws2812():
     # Blinken aus
     do_all_no_blink()
 
+def test_led(stripe, pos):
+    do_all_off()
+    strip_obj[stripe].set_pixel(0, (70,70,70))
+    ledstate.refresh()
 
 def do_all_on():
     # Setze Farbwerte in alle LED-Objekte
@@ -254,7 +258,6 @@ def self_test():                                # Pro Stripe einmal Aus-RGB(25%)
         time.sleep(0.3)
 
 
-
 def do_blink_test():
     loops = 4
     looptime = 0.15
@@ -309,6 +312,8 @@ def set_led_obj(obj,state):
         led_obj[obj].show_blink()
     do_refresh()
 
+# -----------------------------------------------------------------------------
+
 def main():
     
     print("WS2812 -> Setup")
@@ -317,8 +322,8 @@ def main():
     print("WS2812 -> Run self test")
     self_test()
     
-    #print("WS2812 -> Blink Test")
-    #do_blink_test()
+    print("WS2812 -> Test -> LED")
+    test_led(0,0)
 
     #print("WS2812 -> Object Test")
     #do_obj_on_off_def_off()
@@ -326,12 +331,12 @@ def main():
     #print("WS2812 -> LED-Dot-Test")
     #do_dot_test()
 
-    print("WS2812 -> Segment-Blink")
-    set_led_obj(0,"blink")
-    for i in range(0,10):
-        do_blink()
-        time.sleep(0.5)
-    set_led_obj(0,"def")    
+    #print("WS2812 -> Segment-Blink")
+    #set_led_obj(0,"blink")
+    #for i in range(0,10):
+    #    do_blink()
+    #    time.sleep(0.5)
+    #set_led_obj(0,"def")    
     
 
     print("WS2812 -> End of Program !!!")
