@@ -8,8 +8,16 @@ from module_init import Global_Module as MyModule
 #import module_serial
 import time
 
-#             |  0 |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10
-segment_map = (  0 ,  7 ,  8 ,  9 ,  6 ,  0 ,  1 ,  3 ,  2 ,  5 ,  4 )
+
+pix_array_01 = [0,1,2,3,4,11]
+pix_array_02 = [12,13,14]
+pix_array_03 = [20,21]
+pix_array_04 = [22]
+pix_array_05 = [23]
+pix_array_06 = [24]
+pix_array_07 = [25]
+pix_array_08 = [26]
+pix_array_09 = [27]
 
 def blink_func():
     MyWS2812.do_blink()
@@ -53,7 +61,35 @@ def main():
                         #print("obj")
                         #print(MyDecode.get_value_1())
                         #print(segment_map[MyDecode.get_value_1()])
-                        MyWS2812.set_led_obj(segment_map[MyDecode.get_value_1()], MyDecode.get_value_2())
+                        if MyDecode.get_value_1() == 1:
+                            for i in pix_array_01:
+                                MyWS2812.set_led_obj(i, MyDecode.get_value_2())
+                        if MyDecode.get_value_1() == 2:
+                            for i in pix_array_02:
+                                MyWS2812.set_led_obj(i, MyDecode.get_value_2())
+                        if MyDecode.get_value_1() == 3:
+                            for i in pix_array_03:
+                                MyWS2812.set_led_obj(i, MyDecode.get_value_2())
+                        if MyDecode.get_value_1() == 4:
+                            for i in pix_array_04:
+                                MyWS2812.set_led_obj(i, MyDecode.get_value_2())
+                        if MyDecode.get_value_1() == 5:
+                            for i in pix_array_05:
+                                MyWS2812.set_led_obj(i, MyDecode.get_value_2())
+                        if MyDecode.get_value_1() == 6:
+                            for i in pix_array_06:
+                                MyWS2812.set_led_obj(i, MyDecode.get_value_2())
+                        if MyDecode.get_value_1() == 7:
+                            for i in pix_array_07:
+                                MyWS2812.set_led_obj(i, MyDecode.get_value_2())
+                        if MyDecode.get_value_1() == 8:
+                            for i in pix_array_08:
+                                MyWS2812.set_led_obj(i, MyDecode.get_value_2())
+                        if MyDecode.get_value_1() == 9:
+                            for i in pix_array_09:
+                                MyWS2812.set_led_obj(i, MyDecode.get_value_2())
+                        
+                        #MyWS2812.set_led_obj(MyDecode.get_value_1(), MyDecode.get_value_2())
 
                 if MyDecode.get_cmd_1() == "test":
                     #print("Test")
