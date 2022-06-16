@@ -136,7 +136,35 @@ def setup_ws2812():
     led_obj.append(Ledsegment(strip_obj[mg.seg_09_strip], mg.seg_09_start, mg.seg_09_count))      #  8 (09) -> LED Position -> # 09 #
     led_obj.append(Ledsegment(strip_obj[mg.seg_10_strip], mg.seg_10_start, mg.seg_10_count))      #  9 (10) -> LED Position -> # 10 #
     
+    led_obj.append(Ledsegment(strip_obj[mg.seg_11_strip], mg.seg_11_start, mg.seg_11_count))      #  0 (11) -> LED Position -> # 01 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_12_strip], mg.seg_12_start, mg.seg_12_count))      #  1 (12) -> LED Position -> # 02 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_13_strip], mg.seg_13_start, mg.seg_13_count))      #  2 (13) -> LED Position -> # 03 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_14_strip], mg.seg_14_start, mg.seg_14_count))      #  3 (14) -> LED Position -> # 04 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_15_strip], mg.seg_15_start, mg.seg_15_count))      #  4 (15) -> LED Position -> # 05 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_16_strip], mg.seg_16_start, mg.seg_16_count))      #  5 (16) -> LED Position -> # 06 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_17_strip], mg.seg_17_start, mg.seg_17_count))      #  6 (17) -> LED Position -> # 07 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_18_strip], mg.seg_18_start, mg.seg_18_count))      #  7 (18) -> LED Position -> # 08 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_19_strip], mg.seg_19_start, mg.seg_19_count))      #  8 (19) -> LED Position -> # 09 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_20_strip], mg.seg_20_start, mg.seg_20_count))      #  9 (20) -> LED Position -> # 10 #
+
+    led_obj.append(Ledsegment(strip_obj[mg.seg_21_strip], mg.seg_21_start, mg.seg_21_count))      #  0 (21) -> LED Position -> # 01 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_22_strip], mg.seg_22_start, mg.seg_22_count))      #  1 (22) -> LED Position -> # 02 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_23_strip], mg.seg_23_start, mg.seg_23_count))      #  2 (23) -> LED Position -> # 03 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_24_strip], mg.seg_24_start, mg.seg_24_count))      #  3 (24) -> LED Position -> # 04 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_25_strip], mg.seg_25_start, mg.seg_25_count))      #  4 (25) -> LED Position -> # 05 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_26_strip], mg.seg_26_start, mg.seg_26_count))      #  5 (26) -> LED Position -> # 06 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_27_strip], mg.seg_27_start, mg.seg_27_count))      #  6 (27) -> LED Position -> # 07 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_28_strip], mg.seg_28_start, mg.seg_28_count))      #  7 (28) -> LED Position -> # 08 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_29_strip], mg.seg_29_start, mg.seg_29_count))      #  8 (29) -> LED Position -> # 09 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_30_strip], mg.seg_30_start, mg.seg_30_count))      #  9 (30) -> LED Position -> # 10 #
   
+    led_obj.append(Ledsegment(strip_obj[mg.seg_31_strip], mg.seg_31_start, mg.seg_31_count))      #  0 (31) -> LED Position -> # 01 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_32_strip], mg.seg_32_start, mg.seg_32_count))      #  1 (32) -> LED Position -> # 02 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_33_strip], mg.seg_33_start, mg.seg_33_count))      #  2 (33) -> LED Position -> # 03 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_34_strip], mg.seg_34_start, mg.seg_34_count))      #  3 (34) -> LED Position -> # 04 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_35_strip], mg.seg_35_start, mg.seg_35_count))      #  4 (35) -> LED Position -> # 05 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_36_strip], mg.seg_36_start, mg.seg_36_count))      #  5 (36) -> LED Position -> # 06 #
+    led_obj.append(Ledsegment(strip_obj[mg.seg_37_strip], mg.seg_37_start, mg.seg_37_count))      #  6 (37) -> LED Position -> # 07 #
 
     for strips in strip_obj:
         strips.brightness(255)
