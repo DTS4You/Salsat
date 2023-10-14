@@ -1,7 +1,7 @@
 ######################################################
 ### Main-Program                                   ###
 ### Projekt: Salsat                                ###
-### Version: 1.00                                  ###
+### Version: 1.01                                  ###
 ######################################################
 from machine import Pin, Timer                              # RaspberryPi Pico2040 -> Hardware-Library
 from module_init import Global_Module as MyModule
@@ -13,11 +13,13 @@ pix_array_01 = [31,34,35,36]
 pix_array_02 = [5,6,7,8,9,29]
 pix_array_03 = [32,33]
 pix_array_04 = [21]
-pix_array_05 = [23]
+pix_array_05 = [26]
 pix_array_06 = [12,13,14,15,16,18,22,23]
-pix_array_07 = [26,27]
+pix_array_07 = [27]
 pix_array_08 = [10,11,28,30]
-pix_array_09 = [1]
+pix_array_09 = [2]
+pix_array_10 = [35,36]
+pix_array_11 = [3]
 
 def blink_func():
     MyWS2812.do_blink()
@@ -87,6 +89,12 @@ def main():
                                 MyWS2812.set_led_obj(i, MyDecode.get_value_2())
                         if MyDecode.get_value_1() == 9:
                             for i in pix_array_09:
+                                MyWS2812.set_led_obj(i, MyDecode.get_value_2())
+                        if MyDecode.get_value_1() == 10:
+                            for i in pix_array_10:
+                                MyWS2812.set_led_obj(i, MyDecode.get_value_2())
+                        if MyDecode.get_value_1() == 11:
+                            for i in pix_array_11:
                                 MyWS2812.set_led_obj(i, MyDecode.get_value_2())
                         
                         #MyWS2812.set_led_obj(MyDecode.get_value_1(), MyDecode.get_value_2())
